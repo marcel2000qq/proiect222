@@ -464,19 +464,19 @@
       <h2>Tipuri de animatori</h2>
       <div class="carousel-container">
         <div class="type-track">
-          <a href="#mimi-clasic" class="type-card" style="background-image: url('./mime1.jpg');">
+          <a href="#mimi-clasic" class="type-card" style="background-image: url('/images/mime1.jpg');">
             <span>🎭 Mimi Clasic</span>
           </a>
-          <a href="#mimi-clown" class="type-card" style="background-image: url('./mime2.jpg');">
+          <a href="#mimi-clown" class="type-card" style="background-image: url('/images/mime2.jpg');">
             <span>🤹‍♂️ Mimi Clown</span>
           </a>
-          <a href="#mimi-romantic" class="type-card" style="background-image: url('./mime3.jpg');">
+          <a href="#mimi-romantic" class="type-card" style="background-image: url('/images/mime3.jpg');">
             <span>💌 Mimi Romantic</span>
           </a>
-          <a href="#mimi-filosof" class="type-card" style="background-image: url('./mime4.jpg');">
+          <a href="#mimi-filosof" class="type-card" style="background-image: url('/images/mime4.jpg');">
             <span>🧠 Mimi Filosof</span>
           </a>
-          <a href="#mimi-spectacol" class="type-card" style="background-image: url('./mime5.jpg');">
+          <a href="#mimi-spectacol" class="type-card" style="background-image: url('/images/mime5.jpg');">
             <span>🎪 Mimi Spectacol</span>
           </a>
         </div>
@@ -559,18 +559,18 @@
     </div>
 
     <div class="photo-gallery">
-      <img src="./photo1.jpg" alt="Galerie foto">
-      <img src="./photo2.jpg" alt="Galerie foto">
-      <img src="./photo3.jpg" alt="Galerie foto">
-      <img src="./photo4.jpg" alt="Galerie foto">
-      <img src="./photo5.jpg" alt="Galerie foto">
+      <img src="/images/photo1.jpg" alt="Galerie foto">
+      <img src="/images/photo2.jpg" alt="Galerie foto">
+      <img src="/images/photo3.jpg" alt="Galerie foto">
+      <img src="/images/photo4.jpg" alt="Galerie foto">
+      <img src="/images/photo5.jpg" alt="Galerie foto">
     </div>
 
     <button id="back-to-top" class="btn" style="position: fixed; bottom: 2rem; right: 2rem; padding: 0.8rem 1.5rem; display: none;">⬆️</button>
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.11.5/main.min.js"></script>
-  <script src="./index.js"></script>
+  <script src="/index.js" type="module" defer></script>
   <!-- ... restul HTML și CSS rămâne neschimbat ... -->
 <!-- ... restul HTML și CSS rămâne neschimbat ... -->
 <script>
@@ -580,7 +580,7 @@
       const images = ['background.jpg', 'mime1.jpg', 'mime2.jpg', 'mime3.jpg', 'mime4.jpg', 'mime5.jpg', 'photo1.jpg', 'photo2.jpg', 'photo3.jpg', 'photo4.jpg', 'photo5.jpg', 'favicon.ico'];
       images.forEach(img => {
         const image = new Image();
-        image.src = `./${img}`;
+        image.src = `/images/${img}`;
         image.onerror = () => console.error(`Eroare la încărcarea imaginii: ${img}`);
       });
       if (!document.getElementById('calendar')) {
